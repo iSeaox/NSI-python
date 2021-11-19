@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Un titre</title>
+		<link rel="stylesheet" type="text/css" href="light.css">
+		<script type="text/javascript">
+			function changeCSS() {
+				current_css = document.querySelector("link").getAttribute("href")
+				if(current_css == "light.css") {
+					document.querySelector("link").setAttribute("href", "dark.css")
+				}
+				else {
+					document.querySelector("link").setAttribute("href", "light.css")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<button id="changeCSS" onclick="changeCSS()"></button>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport"
+	          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <link rel="stylesheet" href="style.css" class="css">
+	    <script src="converter.js" defer></script>
+	    <title>Monnaie</title>
+	</head>
+	<body>
+		<div>
+			<select id="base_select"></select>
+			<select id="dest_select"></select>
+		</div>
+		<div>
+			<p>Montant à convertir : <input id="input_amount" type="number" placeholder="Ex: 145.3"></p>
+		</div>
+		<button onclick="convertUsingForm()">Convertir</button>
+		<div>
+			<h2 id="convert_awnser">Resulat: </h2>
+		</div>
+	</body>
+</html>
