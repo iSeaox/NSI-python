@@ -10,16 +10,17 @@
 	    <title>Monnaie</title>
 	</head>
 	<body>
-		<div>
-			<select id="base_select"></select>
-			<select id="dest_select"></select>
+		<h1>Converter</h1>
+		<div class="currency_input">
+			<p>Monnaie de base: <select id="base_select"></select></p>
+			<p>Monnaie cible: <select id="dest_select"></select></p>
 		</div>
 		<div>
 			<p>Montant à convertir : <input id="input_amount" type="number" placeholder="Ex: 145.3"></p>
 		</div>
 		<button onclick="convertUsingForm()">Convertir</button>
-		<div>
-			<h2 id="convert_awnser">Resulat: </h2>
+		<div class="div-result">
+			<h2>Resulat: <span id="convert_awnser"></span></h2>
 		</div>
 	</body>
 </html>

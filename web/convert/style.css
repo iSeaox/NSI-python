@@ -1,8 +1,90 @@
-.convertisseur{
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-family: "montserrat", sans-serif;
+h1 {
+	margin-top: 20vh;
+	font-size: 50px;
+}
+
+.div-button {
+	margin-top: 50px;
+}
+
+.currency_input {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+
+.currency_input p {
+	margin-right: 20px;
+}
+
+.currency_input p input {
+	color: white;
+}
+
+#input_amount {
+	background-color: #303030
+}
+
+body {
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #404040;
+	font-family: arial;
+}
+
+/* CSS */
+button {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 50px;
+}
+
+button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: #2c974b;
+}
+
+button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
 #somme{

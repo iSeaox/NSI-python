@@ -22,8 +22,8 @@ function convertUsingForm() {
     var destValue = destSelect.options[destSelect.selectedIndex].value;
 
     var amount = parseInt(document.getElementById("input_amount").value);
-    
-    var rep = (amount * currency.get(baseValue)) * currency.get(destValue);
-    var para = document.getElementById("convert_awnser")
-    para.innerHTML += (amount * currency.get(baseValue)) * (1 / currency.get(destValue)) +" "+ destValue;
+    if(amount > 0) {
+		var para = document.getElementById("convert_awnser")
+		para.innerHTML = (amount * currency.get(baseValue)) * (1 / currency.get(destValue)) +" "+ destValue;
+	}
 }
