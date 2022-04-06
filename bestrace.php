@@ -13,6 +13,7 @@
 	if(isset($_POST['score']) and isset($_POST['name'])) {
 		$prepared_insert = $db->prepare("INSERT INTO results (score, name, date_time) VALUES (?, ?, NOW())");
 		$prepared_insert->execute([$_POST['score'], $_POST['name']]);
+		exit();
 	}
 
   $select = $db->query("SELECT * FROM results ORDER BY score DESC");
