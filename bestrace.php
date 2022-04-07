@@ -29,7 +29,7 @@
 	<body>
 		<ul>
 			<?php 
-				while($data = mysql_fetch_assoc($select)) {
+				while($data = $select->fetch()) {
 					echo "<li>".$data['score']." fait le ".^$data['date_time']."</li>";
 				}
 			?>
